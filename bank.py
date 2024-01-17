@@ -21,9 +21,15 @@ while True:
         pass
     elif choice == '2':
         # papildini kodu šeit
+        x = int(input("Enter your choice (1-4): "))
+        if balance > x:
+            print("Withdrawal from balance "+ str(x) +". New balance: ")
+        else:
+            print("not enough money on balance")
         pass
     elif choice == '3':
         # papildini kodu šeit
+        print("here is your balance ")
         pass
     elif choice == '4':
         print("Exiting the banking system. Thank you!")
