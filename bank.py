@@ -18,18 +18,21 @@ while True:
 
     if choice == '1':
         # papildini kodu šeit
+        x = float(input("deposit amount: "))
+        balance += x
+        print("Deposit of {x} successful. New balance: {balance}")
         pass
     elif choice == '2':
         # papildini kodu šeit
         x = int(input("Enter your choice (1-4): "))
-        if balance > x:
-            print("Withdrawal from balance "+ str(x) +". New balance: ")
+        if balance >= x:
+            print("Withdrawal of {x} successful. New balance: {balance}")
         else:
-            print("not enough money on balance")
+            print("Not enough money in the balance.")
         pass
     elif choice == '3':
         # papildini kodu šeit
-        print("here is your balance ")
+        print("here is your balance: {balance} ")
         pass
     elif choice == '4':
         print("Exiting the banking system. Thank you!")
